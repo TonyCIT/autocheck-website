@@ -29,13 +29,11 @@
       </label>
 
       <div class="nav-links">
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="results.html">Results</a>
-  <a href="book.html">Book</a>
-</div>
-
-
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="results.html">Results</a>
+        <a href="book.html">Book</a>
+      </div>
 
     </nav>
   </header>
@@ -51,74 +49,74 @@
 
     <!-- FORM -->
     <section class="fade">
-  <div class="form-card">
-    <form name="booking" method="POST" data-netlify="true" action="/book.html">
-      <input type="hidden" name="form-name" value="booking">
+      <div class="form-card">
 
-      <!-- Name -->
-      <div>
-        <label for="name">Full Name</label>
-        <input id="name" name="name" type="text" required>
+        <form name="booking" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="booking">
+
+          <!-- Name -->
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" required>
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+
+          <!-- Vehicle -->
+          <div>
+            <label for="vehicle">Vehicle (year/make/model)</label>
+            <input id="vehicle" name="vehicle" type="text" required>
+          </div>
+
+          <!-- Service -->
+          <div class="form-full">
+            <label for="service">Select Service</label>
+            <select id="service" name="service" required>
+              <option value="">Choose...</option>
+              <option>Basic Code Scan – $30</option>
+              <option>Full Diagnostic Scan – $60</option>
+              <option>Mobile Diagnostic Visit – $90</option>
+              <option>Pre-Purchase Scan – $110</option>
+              <option>Trip-Check Scan – $60</option>
+              <option>Service Reset / Relearn – $20</option>
+            </select>
+          </div>
+
+          <!-- Date -->
+          <div>
+            <label for="date">Preferred Date</label>
+            <input id="date" name="date" type="date">
+          </div>
+
+          <!-- Location -->
+          <div>
+            <label for="location">Preferred Location</label>
+            <input id="location" name="location" type="text" placeholder="Home, work, meeting spot...">
+          </div>
+
+          <!-- Message -->
+          <div class="form-full">
+            <label for="message">Additional details</label>
+            <textarea id="message" name="message" placeholder="Anything else I should know?"></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn btn-primary btn-submit">Send Request</button>
+
+        </form>
+
       </div>
-
-      <!-- Phone -->
-      <div>
-        <label for="phone">Phone Number</label>
-        <input id="phone" name="phone" type="tel" required>
-      </div>
-
-      <!-- Email -->
-      <div>
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
-      </div>
-
-      <!-- Vehicle -->
-      <div>
-        <label for="vehicle">Vehicle (year/make/model)</label>
-        <input id="vehicle" name="vehicle" type="text" required>
-      </div>
-
-      <!-- Service -->
-      <div class="form-full">
-        <label for="service">Select Service</label>
-        <select id="service" name="service" required>
-          <option value="">Choose...</option>
-          <option>Basic Code Scan – $30</option>
-          <option>Full Diagnostic Scan – $60</option>
-          <option>Mobile Diagnostic Visit – $90</option>
-          <option>Pre-Purchase Scan – $110</option>
-          <option>Trip-Check Scan – $60</option>
-          <option>Service Reset / Relearn – $20</option>
-        </select>
-      </div>
-
-      <!-- Date -->
-      <div>
-        <label for="date">Preferred Date</label>
-        <input id="date" name="date" type="date">
-      </div>
-
-      <!-- Location -->
-      <div>
-        <label for="location">Preferred Location</label>
-        <input id="location" name="location" type="text" placeholder="Home, work, meeting spot...">
-      </div>
-
-      <!-- Message -->
-      <div class="form-full">
-        <label for="message">Additional details</label>
-        <textarea id="message" name="message" placeholder="Anything else I should know?"></textarea>
-      </div>
-
-      <!-- Submit -->
-      <button type="submit" class="btn btn-primary btn-submit">Send Request</button>
-
-    </form>
-
-  </div>
-</section>
-
+    </section>
 
     <!-- FAQ -->
     <section class="section fade">
@@ -160,4 +158,3 @@
 
 </body>
 </html>
-            
